@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caprasimo&family=Montserrat:wght@200;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Pacifico&family=Roboto:wght@300;400&family=Victor+Mono:wght@200;300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="back-ground">
+        <div class="container">
+            <div class="header text-center py-5">
+                <h1>BookMarker</h1>
+                <div class="second-header">
+                    <h3 class="py-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                            class="fa-solid fa-bookmark"></i></h3>
+
+
+                </div>
+            </div>
+            <div class="site my-1">
+                <label for="siteName" class="py-2 fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input type="text" id="siteName"oninput=" validation()" class="form-control" placeholder="Bookmark Name">
+            </div>
+
+            <div class="url ">
+                <label for="siteUrl" class="py-2 fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input type="text" id="siteUrl" oninput=" validation()" class="form-control" placeholder="Website URL">
+            </div>
+            <div class="btn-submit">
+                <button class="btn d-block my-4 m-auto" onclick="addSite();"> submit </button>
+
+            </div>
+
+
+            <table class="table text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Website</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="userData">
+                   
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="js/index.js"></script>
+</body>
+
+</html>

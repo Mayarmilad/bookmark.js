@@ -1,0 +1,43 @@
+.back-ground{
+    background-color: #F7ECDE;
+}
+.back-ground .header h1{
+    font-size:60px ;
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed black;
+    position: relative;
+    z-index: 1;
+}
+.back-ground .header h1::before{
+    content: "";
+    position: absolute;
+    height: 20%;
+    width: 30%;
+    bottom: 50px;
+    left: 50%;
+    background-color:#FEC260;
+    z-index: -1;
+    transform: translate(-50%);
+    transition: all 1s;
+}
+.back-ground .header h1:hover::before{
+    height: 40%;
+}
+.back-ground .header .second-header{
+    background:linear-gradient(90deg, rgba(60,165,92,1) 0%, rgba(181,172,73,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.back-ground .btn-submit .btn{
+    background-color: #D1512D;
+    padding-inline: 30px;
+    color: #fff;
+    
+}
+.btn-submit{
+    margin-bottom: 50px;
+    border-bottom: 1px dashed black;
+}
